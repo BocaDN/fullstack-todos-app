@@ -1,0 +1,6 @@
+[submodule "todos-backend"]
+	path = todos-backend
+	url = https://github.com/BocaDN/spring-boot-todo-backend
+[submodule "todos-frontend"]
+	path = todos-frontend
+	url = https://github.com/BocaDN/nextjs-todo-fe
