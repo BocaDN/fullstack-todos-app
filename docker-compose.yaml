@@ -8,6 +8,7 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://backend:8080
     depends_on:
       - backend
 
@@ -17,7 +18,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/yourdbname
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/todo-db
     depends_on:
       - mongo
 
